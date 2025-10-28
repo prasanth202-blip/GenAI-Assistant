@@ -4,7 +4,11 @@ from ..utils.interview import handle_interview
 from utils.code_explainer import explain_code
 from utils.devops_assistant import review_devops
 from dotenv import load_dotenv
+import sys
 import os
+
+# Add the parent directory to the Python path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 load_dotenv()
 print("🟢 API KEY LOADED:", os.getenv("OPENAI_API_KEY"))
