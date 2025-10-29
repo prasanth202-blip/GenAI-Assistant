@@ -8,7 +8,7 @@ import os
 import sys
 
 # Add the parent directory to the Python path
-print("In module products sys.path[0], __package__ ==", sys.path[0], __package__)
+print("In module main sys.path[0], __name__ ==", sys.path[0], __main__)
 
 load_dotenv()
 print("🟢 API KEY LOADED:", os.getenv("OPENAI_API_KEY"))
