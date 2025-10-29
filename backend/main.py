@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Form
 from fastapi.middleware.cors import CORSMiddleware
-from backend.utils.interview import handle_interview
+from genai-assistant.utils.interview import handle_interview
 from utils.code_explainer import explain_code
 from utils.devops_assistant import review_devops
 from dotenv import load_dotenv
